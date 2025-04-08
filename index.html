@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sito sfide cospace</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #eeeeee;
+        }
+        header {
+            background-color: #24005e;
+            color: white;
+            padding: 30px 0;
+            text-align: center;
+        }
+        nav {
+            background-color: #a100b6;
+            overflow: hidden;
+        }
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            display: inline-block;
+        }
+        nav a:hover {
+            background-color: #575757;
+        }
+        .main-content {
+            padding: 20px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        .hidden-images {
+            display: none;
+            margin-top: 20px;
+        }
+        .info-message {
+            display: none;
+            margin-top: 20px;
+            font-size: 18px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Sito sfide cospace</h1>
+        <p>Scopri di più sui miei esercizi!</p>
+    </header>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#indice">Indice</a>
+    </nav>
+    <div class="main-content">
+        <h2>Introduzione</h2>
+        <p>Benvenuti nel sito. Qui potete trovare i miei esercizi su cospace.</p>
+    </div>
+
+    <div class="main-content">
+        <!-- Indice -->
+        <div class="index">
+            <h2>Indice degli esercizi</h2>
+            <ul>
+                <li><a href="es1.html">Esercizio 1 - Write a Poem</a></li>
+                <li><a href="es2.html">Esercizio 2 - You can learn text tags</a></li>
+                <li><a href="es3.html">Esercizio 3 - Wishlist</a></li>
+                <li><a href="es4.html">Esercizio 4 - A picture-perfect trip</a></li>
+                <li><a href="es5.html">Esercizio 5 - Apples and bananas classes</a></li>
+                <li><a href="es6.html">Esercizio 6 - Jump around</a></li>
+                <li><a href="es7.html">Esercizio 7 - The dinner table</a></li>
+                <li><a href="es8.html">Esercizio 8 - Fancy font families</a></li>
+                <li><a href="es9.html">Esercizio 9 - More CSS text properties</a></li>
+                <li><a href="es10.html">Esercizio 10 - Group the groupers</a></li>
+            </ul>
+        </div>
+        
+        <!-- Buttons Section -->
+        <div class="buttons">
+            <button onclick="showImages()">Mostra le immagini</button>
+            <button onclick="showInfo()">Clicca per avere altre informazioni</button>
+        </div>
+
+        <!-- Hidden Images -->
+        <div class="hidden-images" id="imageSection">
+            <img src="https://www.google.com/search?q=immagini+ragazzi+che+lavorano+al+pc+free&sca_esv=17771aff06750f59&rlz=1C1VDKB_itIT1157&udm=2&biw=1920&bih=953&ei=g9T0Z9C7AeGC9u8P4oHN6Qo&ved=0ahUKEwiQibH9-MeMAxVhgf0HHeJAM60Q4dUDCBE&uact=5&oq=immagini+ragazzi+che+lavorano+al+pc+free&gs_lp=EgNpbWciKGltbWFnaW5pIHJhZ2F6emkgY2hlIGxhdm9yYW5vIGFsIHBjIGZyZWVIpBBQsQRY_w1wAXgAkAEAmAE7oAGeAqoBATW4AQPIAQD4AQGYAgCgAgCYAwCIBgGSBwCgB-EBsgcAuAcA&sclient=img&safe=active&ssui=on#vhid=jo09tMIjcIcAnM&vssid=mosaic" alt="Image 1">
+            <img src="DyAEA-AEBmAIMoAKNB8ICCxAAGIAEGLEDGIMBwgIFEAAYgATCAggQABiABBixA8ICDhAAGIAEGLEDGIMBGIoFwgIEEAAYHpgDAIgGAZIHBDEwLjKgB7AtsgcEMTAuMrgHjQc&sclient=img&safe=active&ssui=on#vhid=fcygcyYwwlw40M&vssid=mosaic" alt="Image 2">
+        </div>
+
+        <!-- Info Message -->
+        <div class="info-message" id="infoMessage">
+            <p>Queste sono alcune informazioni aggiuntive! Se vuoi provare anche tu cerca su internet dei tutorial.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Sito sfide cospace. Tutti i diritti riservati.</p>
+    </footer>
+
+    <script>
+        function showImages() {
+            var imageSection = document.getElementById("imageSection");
+            imageSection.style.display = imageSection.style.display === "none" ? "block" : "none";
+        }
+
+        function showInfo() {
+            var infoMessage = document.getElementById("infoMessage");
+            infoMessage.style.display = infoMessage.style.display === "none" ? "block" : "none";
+        }
+    </script>
+</body>
+</html>
